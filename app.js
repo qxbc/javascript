@@ -13,7 +13,32 @@
 //     <div>asd</div>
 // `
 // console.log(output)
+//
+// const name = 'Michael'
+// console.log(name.length)
+// console.log(name.toUpperCase())
+// console.log(name.toLowerCase())
+// console.log(name.charAt(2))
+// console.log(name.indexOf('ael'))
+// console.log(name.indexOf('x'))
+// console.log(name.startsWith('Mich'))
+// console.log(name.startsWith('mich'))
+// console.log(name.toLowerCase().startsWith('mich'))
+// console.log(name.endsWith('ael'))
+// console.log(name.repeat(3))
+// const string = '     password      '
+// console.log(string.trim())
+// console.log(string.trimRight())
+// console.log(string.trimLeft())
 
-const name = 'Michael'
+function logPersone(s, name, age) {
+    console.log(s, name, age);
+    return `${s[0]}${name}${s[1]}${age}${s[2]}`
+}
 
-console.log(name.length)
+const personName = 'Michael';
+const personAge = 21;
+
+const output = logPersone`Имя: ${personName}, Возраст: ${personAge}!`;
+
+console.log(output);
